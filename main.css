@@ -1,0 +1,82 @@
+body {
+    font-family:Impact; 
+    background: var(--bg);
+}
+
+ul {
+    font-family: Arial;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: 'Courier New';
+}
+
+.light-theme {
+    --fontcolor:var(--black);
+    --bg: var(--green);
+    --btnbr:var(--black);
+    --btnbg:var(--white);
+    --btnborder:var(--black)
+
+}
+
+.dark-theme {
+    --fontcolor:var(--green);
+    --bg: var(--black);
+    --btnbr:var(--black);
+    --btnbg:var(--black);
+    --btnborder:var(--white)
+}
+
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+*{
+    color: var(--fontcolor);
+    font-family: 'Courier New';
+}
+
+.btn {
+    color: var(--btnfontcolor);
+    background-color:var(--btnbg);
+    border-color: var(--btnborder);
+}
+
+.btn {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    height: 50px;
+    width: 90px;
+    border-radius: 12px;
+    color: var(--btnfontcolor);
+    background-color: var(--btnbg);
+}
+
+.brt:focus {outline-style: none;}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%)
+}
+
+#animatedtext {
+    font-size: 48px;
+    font-family: Impact;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
